@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хобби по вкусу — главная</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FFF3DF;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: #a6c4a0;
+            color: #A4303F;
+            padding: 40px 20px;
+            border-bottom: 6px solid #a4303f;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #A4303F;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f2d0a4;
+            display: inline-block;
+            width: auto;
+        }
+
+        .title-wrapper {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .cards-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 24px;
+            width: 320px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+	border-bottom: 2px solid #a4303f;
+        }
+
+        .card-header {
+            background: #c4d9be;
+            padding: 24px 20px;
+	border-bottom: 2px solid #a4303f;
+        }
+
+        .card-header h3 {
+            color: #A4303F;
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        .price-badge {
+            background-color: #f2d0a4;
+            color: #A4303F;
+            padding: 5px 12px;
+            border-radius: 40px;
+            font-size: 1rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .age-badge {
+            background-color: #FFF3DF;
+            color: #870058;
+            padding: 5px 12px;
+            border-radius: 40px;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body p {
+            color: #4a4640;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+
+        .card-body .short-desc {
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .detail-link {
+            display: inline-block;
+            margin-top: 12px;
+            background-color: #f2d0a4;
+            color: #A4303F;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: background 0.2s;
+        }
+
+        .card:hover .detail-link {
+            background-color: #870058;
+            color: #f2d0a4;
+        }
+
+        .info-block {
+            background-color: #f2d0a4;
+            border-radius: 40px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #A4303F;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>⌘Хобби по вкусу</h1>
+    <div class="subtitle">Не знаете чем заняться в свободное время?</div>
+    <div class="subtitle">Здесь вы найдете занятие себе по душе</div>
+</header>
+
+<div class="container">
+    <div class="info-block">
+        <strong>15 видов творчества</strong> — нажмите на карточку, чтобы узнать подробности: материалы, советы, обучающие ресурсы и где купить всё необходимое.
+    </div>
+
+    <div class="title-wrapper">
+        <div class="section-title">Все виды творчества</div>
+    </div>
+
+    <div class="cards-grid">
+
+        <a href="vyshivka.html" class="card">
+            <div class="card-header">
+                <h3>Вышивка</h3>
+                <div class="price-badge">500 ₽</div>
+                <div class="age-badge">10+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Создание узоров иглой на ткани. Развивает усидчивость и мелкую моторику.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+        <a href="vyazanie.html" class="card">
+            <div class="card-header">
+                <h3>Вязание</h3>
+                <div class="price-badge">800 ₽</div>
+                <div class="age-badge">10+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Петельное переплетение нитей спицами или крючком. Развивает ловкость рук.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+        <a href="shitie.html" class="card">
+            <div class="card-header">
+                <h3>Шитье</h3>
+                <div class="price-badge">1000 ₽</div>
+                <div class="age-badge">10+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Соединение деталей ткани стежками. Развивает пространственное мышление.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+        <a href="dekupazh.html" class="card">
+            <div class="card-header">
+                <h3>Декупаж</h3>
+                <div class="price-badge">300 ₽</div>
+                <div class="age-badge">6+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Аппликация из салфеток для декора. Развивает чувство композиции.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+        <a href="karving.html" class="card">
+            <div class="card-header">
+                <h3>Карвинг</h3>
+                <div class="price-badge">1500 ₽</div>
+                <div class="age-badge">12+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Художественная резьба по овощам и фруктам. Развивает фантазию.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+        <a href="skrapbuking.html" class="card">
+            <div class="card-header">
+                <h3>Скрапбукинг</h3>
+                <div class="price-badge">700 ₽</div>
+                <div class="age-badge">6+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Оформление альбомов и рамок из бумаги. Развивает дизайнерский вкус.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+        <a href="lepka.html" class="card">
+            <div class="card-header">
+                <h3>Лепка из глины</h3>
+                <div class="price-badge">600 ₽</div>
+                <div class="age-badge">6+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Создание украшений и фигурок. Развивает 3D-мышление и моторику.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+        <a href="rospis.html" class="card">
+            <div class="card-header">
+                <h3>Роспись</h3>
+                <div class="price-badge">400 ₽</div>
+                <div class="age-badge">6+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Декоративное рисование красками. Развивает чувство цвета.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+        <a href="valyanie.html" class="card">
+            <div class="card-header">
+                <h3>Валяние</h3>
+                <div class="price-badge">900 ₽</div>
+                <div class="age-badge">10+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Сцепление шерсти в игрушки и панно. Развивает усидчивость.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+        <a href="mylovarenie.html" class="card">
+            <div class="card-header">
+                <h3>Мыловарение</h3>
+                <div class="price-badge">500 ₽</div>
+                <div class="age-badge">12+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Создание мыла с нуля или из основы. Развивает эстетический вкус.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+        <a href="kvilling.html" class="card">
+            <div class="card-header">
+                <h3>Квиллинг</h3>
+                <div class="price-badge">300 ₽</div>
+                <div class="age-badge">6+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Скручивание бумажных полос в композиции. Развивает аккуратность.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+        <a href="almaznaya.html" class="card">
+            <div class="card-header">
+                <h3>Алмазная вышивка</h3>
+                <div class="price-badge">1000 ₽</div>
+                <div class="age-badge">6+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Выкладка стразов на клеевую схему. Развивает зоркость.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+        <a href="svechi.html" class="card">
+            <div class="card-header">
+                <h3>Изготовление свечей</h3>
+                <div class="price-badge">700 ₽</div>
+                <div class="age-badge">12+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Литье из воска с фитилем. Развивает терпение и понимание физики.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+        <a href="tvisting.html" class="card">
+            <div class="card-header">
+                <h3>Твистинг</h3>
+                <div class="price-badge">400 ₽</div>
+                <div class="age-badge">10+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Скручивание шаров в фигуры животных. Развивает воображение.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+        <a href="lozopletenie.html" class="card">
+            <div class="card-header">
+                <h3>Лозоплетение</h3>
+                <div class="price-badge">1200 ₽</div>
+                <div class="age-badge">12+</div>
+            </div>
+            <div class="card-body">
+                <p class="short-desc">Переплетение прутьев для корзин и мебели. Развивает силу рук.</p>
+                <div class="detail-link">Подробнее →</div>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+<footer>
+    <p>© Хобби по вкусу — выберите своё идеальное занятие!</p>
+    <p style="font-size: 0.8rem; margin-top: 8px;">Все виды творчества с описанием материалов, советами и обучающими ресурсами</p>
+</footer>
+
+</body>
+</html>
