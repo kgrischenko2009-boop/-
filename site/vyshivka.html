@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вышивка — подробное описание</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FFF3DF;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #a6c4a0;
+            color: #A4303F;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 6px solid #a4303f;
+
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #f2d0a4;
+            color: #A4303F;
+            padding: 10px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        .back-link:hover {
+            background-color: #870058;
+            color: #f2d0a4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .detail-card {
+            background-color: white;
+            border-radius: 40px;
+            padding: 40px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .craft-title {
+            font-size: 2.5rem;
+            color: #A4303F;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+	font-weight: 600;
+        }
+
+        .price {
+            background-color: #f2d0a4;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .age {
+            background-color: #d7e9c8;
+            padding: 6px 16px;
+            border-radius: 30px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #A4303F;
+            border-left: 5px solid #a6c4a0;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+
+        .section-content {
+            background-color: #faf8f0;
+            padding: 20px;
+            border-radius: 24px;
+            line-height: 1.6;
+        }
+
+        .materials-list, .tips-list {
+            padding-left: 25px;
+        }
+
+        .materials-list li, .tips-list li {
+            margin: 8px 0;
+        }
+	
+	.button {
+	background-color: #faf8f0;
+	border-radius: 16px;
+	margin-top: 10px;
+	max-width: 300px;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	box-shadow: 0 4px 12px #988776;
+	text-decoration: none;
+	color: black;
+	}
+	
+	.button:hover {
+	background-color: #DEC4AB;
+	}
+    
+    img {
+        border-radius: 12px;
+        max-width: 500px;
+        max-height: 500px;
+    }
+	
+    
+    </style>
+</head>
+<body>
+
+
+<header>
+    <h1>⌘Хобби по вкусу</h1>
+    <a href="glavnaya.html" class="back-link">← Вернуться ко всем хобби</a>
+</header>
+
+<div class="container">
+    <div class="detail-card">
+        <div class="craft-title">
+            Вышивка
+            <span class="price">500 ₽</span>
+        </div>
+        <div class="age">Рекомендуемый возраст: 10+</div>
+        <div style="text-align: center;">
+        <img src="vyshivka.jpg" alt="Описание картинки">
+        </div>
+        <div class="section">
+            <div class="section-title">Описание и применение</div>
+            <div class="section-content">
+                Создание узоров иглой на ткани. Используется для украшения одежды, картин, постельного белья. азвивает усидчивость, мелкую моторику, глазомер и терпение.
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Необходимые материалы и инструменты</div>
+            <div class="section-content">
+                <ul class="materials-list">
+                    <li>Пяльцы</li>
+                    <li>Канва / ткань</li>
+                    <li>Мулине или шерсть</li>
+                    <li>Иглы для вышивания</li>
+                    <li>Схема для вышивки</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Где купить материалы</div>
+        	
+		<a href="https://motochek-shop.ru/" class='button'>Интернет магазин "Моточек"</a></div>
+
+        <div class="section">
+            <div class="section-title">Обучающие ресурсы</div>
+            <a href="https://needleworknadin.ru/" class='button'>Онлайн-школа NADIN.NEEDLEWORK</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
